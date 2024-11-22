@@ -1,11 +1,11 @@
-# VoronV2.5355_SB_CAN_TAP
+# VoronV2.5355
 
 Voron 2.4r2 - 350mm - Stealthburner
 
 ## Hardware
     - Voron 2.4r2 (Kit Fysetc)
     - Pi 4 (Raspberry)
-    - Spider 3.0H7 (Fysetc)
+    - Spider 3.0H7 (Fysetc) + 6 TMC2240 (S2240 V2 Fysetc)
     - GE5C
     - PI TFT50 (Big Tree Tech)
     - U2C v2.1 (Big Tree Tech)
