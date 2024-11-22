@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# On se positionne dans le répertoire de log
+cd /home/pi/printer_data/logs/
+
+# Supprime tous les fichiers d'archive de plus de 30 jours
+find *.log.* -mtime +30 -exec rm {} \;
+
+# Renome le log de klipper avec sa date de création
+mv -n klippy.log "klippy.log.$(date -r klippy.log +"%Y-%m-%d_%H-%M-%S")"
+

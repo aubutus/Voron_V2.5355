@@ -1,0 +1,39 @@
+######################################
+##          DRIVERS  TMC2209        ##
+######################################
+
+[tmc2209 stepper_z]
+uart_pin: PD10
+interpolate: True
+# run_current: 0.7      # Moteur Fysetc
+run_current: 0.6        # 0.8 max : Moteur LDO-42STH40-1684AC(RSS9T)
+hold_current: 0.4
+sense_resistor: 0.110
+stealthchop_threshold: 0
+
+[tmc2209 stepper_z1]
+uart_pin: PC14
+interpolate: True
+# run_current: 0.7      # Moteur Fysetc
+run_current: 0.6        # 0.8 max : Moteur LDO-42STH40-1684AC(RSS9T)
+hold_current: 0.4
+sense_resistor: 0.110
+stealthchop_threshold: 0
+
+[tmc2209 stepper_z2]
+uart_pin: PC15
+interpolate: true
+# run_current: 0.7      # Moteur Fysetc
+run_current: 0.6       # 0.8 max : Moteur LDO-42STH40-1684AC(RSS9T)
+hold_current: 0.4
+sense_resistor: 0.110
+stealthchop_threshold: 0
+
+[tmc2209 stepper_z3]
+uart_pin: PA15
+interpolate: true
+# run_current: 0.7      # Moteur Fysetc
+run_current: 0.6        # 0.8 max : Moteur LDO-42STH40-1684AC(RSS9T)
+hold_current: 0.4
+sense_resistor: 0.110
+stealthchop_threshold: 0

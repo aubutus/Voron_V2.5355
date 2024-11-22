@@ -1,0 +1,56 @@
+[mcu nevermore]
+#serial: /dev/ttyACM1
+serial: /dev/serial/by-path/platform-fd500000.pcie-pci-0000:01:00.0-usb-0:1.3:1.0
+restart_method: command
+
+[temperature_sensor nevermore]
+sensor_type: temperature_mcu
+sensor_mcu: nevermore
+min_temp: 10
+max_temp: 100
+
+
+[sgp40]
+
+[temperature_sensor temp_exhaust]
+# Gpio 21/20 (SCL/SDA) GPIO21=i2c0f
+sensor_type: BME280
+i2c_mcu: nevermore
+i2c_bus: i2c0f
+i2c_speed: 100000
+
+[temperature_sensor temp_intake]
+# Gpio 19/18 (SCL/SDA) GPIO19=i2c1e
+sensor_type: BME280
+i2c_mcu: nevermore
+i2c_bus: i2c1e
+i2c_speed: 100000
+
+[temperature_sensor voc_exhaust]
+# Gpio 21/20 (SCL/SDA) GPIO21=i2c0f
+sensor_type: SGP40 # Sensor on the top left
+i2c_mcu: nevermore
+i2c_bus: i2c0f
+ref_temp_sensor: bme280 temp_exhaust
+ref_humidity_sensor: bme280 temp_exhaust
+i2c_speed: 100000
+#plot_voc: true
+
+[temperature_sensor voc_intake]
+# Gpio 19/18 (SCL/SDA) GPIO19=i2c1e
+sensor_type: SGP40 # Sensor on the right
+i2c_mcu: nevermore
+i2c_bus: i2c1e
+ref_temp_sensor: bme280 temp_intake
+ref_humidity_sensor: bme280 temp_intake
+i2c_speed: 100000
+#plot_voc: true
+
+[fan_generic StealthMax]
+pin: nevermore:gpio27 #remove voltage selector
+cycle_time: 0.00004
+tachometer_pin: ^nevermore:gpio28
+tachometer_ppr: 2
+tachometer_poll_interval: 0.0002 
+max_power: 0.8
+kick_start_time: 0.5
