@@ -8,7 +8,6 @@ Voron 2.4r2 - 350mm - Stealthburner
     - Spider 3.0H7 (Fysetc) + 6 TMC2240 (S2240 V2 Fysetc)
     - GE5C
     - PI TFT50 (Big Tree Tech)
-    - U2C v2.1 (Big Tree Tech)
     - EBB SB2240 (Big Tree Tech)
     - RAINBOW BARF LOGO LED (fysetc)
     - Hotend X1 (BambouLab)
@@ -29,11 +28,12 @@ Voron 2.4r2 - 350mm - Stealthburner
         - Option : voron-logo-latch (https://printables.com/model/849495-clicky-clack-fridge-door-voron-logo-latch)
         - BTT PITFT50 45-degree Mount (Modifié) (https://mods.vorondesign.com/details/mn2APihm7NkJZhoskam1CQ)
     - Bouchon de rail Z MGN 9 (https://www.printables.com/model/443330-voron-24-9mm-linear-rail-cap-mgn9)
+    - 20x20mm Profile Covers (https://mods.vorondesign.com/details/8PtM9BKgRdBUN7CZ8g6Q)
 
 ## Mods perso
     - Jupe avec grille rouge en Nid d'abeille (Basé sur jupe GE2ZXL - Non diffusé)
         - Jupe Alimentation 230v (Bloc hexagonal - Non diffusé)
-    - angrycam-boulanger-essentielb-hdcam-1080p-voron (https://www.printables.com/model/692280-angrycam-boulanger-essentielb-hdcam-1080p-voron)
+    - Angrycam-boulanger-essentielb-hdcam-1080p-voron (https://www.printables.com/model/692280-angrycam-boulanger-essentielb-hdcam-1080p-voron)
     - Nevermore StealthMax : Version Raspberry Pico déporté (Non diffusé)
     - Passe Tube PTFE + Câble Can (Non diffusé)
     
