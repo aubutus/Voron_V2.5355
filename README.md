@@ -29,6 +29,8 @@ Voron 2.4r2 - 350mm - Stealthburner
         - BTT PITFT50 45-degree Mount (Modifié) (https://mods.vorondesign.com/details/mn2APihm7NkJZhoskam1CQ)
     - Bouchon de rail Z MGN 9 (https://www.printables.com/model/443330-voron-24-9mm-linear-rail-cap-mgn9)
     - 20x20mm Profile Covers (https://mods.vorondesign.com/details/8PtM9BKgRdBUN7CZ8g6Q)
+    - Sturdy handles (Poignée supérieur) (https://mods.vorondesign.com/details/EAM1ZiQJCUzXznvOA767w)
+    - Voron handles (Poignée inéfieur) (https://www.printables.com/model/1064221-voron-handles)
 
 ## Mods perso
     - Jupe avec grille rouge en Nid d'abeille (Basé sur jupe GE2ZXL - Non diffusé)
