@@ -1,0 +1,48 @@
+Probe type: Tap mode detected
+Homing
+Running all tests
+
+Corner test:
+Test probe around the bed to see if there are issues with individual drives
+Leveling... Done
+Test number: 4...3...2...1...Done
+
+                                      min       max     first      last      mean       std  count     range     drift
+test
+1: corner 30 samples (10, 330)   1.436885  1.454246  1.454246  1.442441  1.440566  0.003551     30  0.017361 -0.011805
+2: corner 30 samples (340, 330)  1.525080  1.534108  1.529941  1.533413  1.530265  0.002472     30  0.009028  0.003472
+3: corner 30 samples (10, 10)    1.564663  1.568830  1.568135  1.567441  1.567441  0.000965     30  0.004167 -0.000694
+4: corner 30 samples (340, 10)   1.606330  1.609802  1.607024  1.607024  1.608251  0.000888     30  0.003472  0.000000
+
+Repeatability test:
+Take 20 probe_accuracy tests to check for repeatability
+Test number: 20...19...18...17...16...15...14...13...12...11...10...9...8...7...6...5...4...3...2...1...Done
+
+                            min       max     first      last      mean       std  count     range     drift
+test
+01: center 10 samples  1.563274  1.582719  1.572996  1.569524  1.570205  0.003383    200  0.019445 -0.003472
+02: center 10 samples  1.564663  1.580635  1.575080  1.570219  1.571121  0.003332    200  0.015972 -0.004861
+03: center 10 samples  1.563969  1.581330  1.575080  1.570219  1.570871  0.003001    200  0.017361 -0.004861
+04: center 10 samples  1.563274  1.579246  1.577858  1.575774  1.570889  0.002979    200  0.015972 -0.002084
+
+Your probe config uses mean of 10 sample(s) over 4 tests
+Below is the statistics on your mean Z values, using different probe samples
+
+       mean       min       max       std     range  sample_count
+0  1.575739  1.575253  1.576746  0.000681  0.001493             1
+1  1.573704  1.573309  1.574194  0.000368  0.000885             2
+2  1.572609  1.572209  1.573077  0.000366  0.000868             3
+3  1.571985  1.571529  1.572371  0.000350  0.000842             4
+4  1.571557  1.571066  1.571865  0.000346  0.000799             5
+5  1.571320  1.570861  1.571567  0.000317  0.000706             6
+6  1.571121  1.570621  1.571389  0.000344  0.000769             7
+7  1.570968  1.570444  1.571265  0.000363  0.000820             8
+8  1.570845  1.570311  1.571179  0.000373  0.000868             9
+9  1.570772  1.570205  1.571121  0.000395  0.000917            10
+
+Drift test:
+Take 100 samples in a row to check for drift
+
+                         min       max     first      last      mean      std  count     range     drift
+test
+center 100 samples  1.572996  1.577858  1.577858  1.574385  1.574621  0.00074    100  0.004862 -0.003473
