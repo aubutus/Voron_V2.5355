@@ -1,5 +1,0 @@
-[gcode_macro LISTE_PRINTER_ELEMENTS]
-gcode:
-{% for key, value in printer %}
-    RESPOND MSG="{{ key|e }} | {{ value|e }}"
-{% endfor %}

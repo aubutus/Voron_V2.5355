@@ -7,12 +7,14 @@ gcode:
     {% set MATERIAL = params.MATERIAL|default("?")|string %}
     {% set FL_SIZE = params.SIZE|default("0_0_0_0")|string %}
 
-    #HEATSOAK_CANCEL                 ; Désactive le HEATSOAK s'il est lancé
+    #SMS_START                      ; envois un sms pour signaler le départ de l'impression
+
+    HEATSOAK_CANCEL                 ; Désactive le HEATSOAK s'il est lancé
 
     configure_extruder             ; Initialise le driver TMS2240 de la carte de tête d'outil EBB SB2240
 
-    #NEVERMORE_PRINT_START           ; Démarrage du Nevermore-controler
-    #UPDATE_DELAYED_GCODE ID=_PRINT_END_DELAYED DURATION=0 ; reset timeout
+    NEVERMORE_PRINT_START           ; Démarrage du Nevermore-controler
+    UPDATE_DELAYED_GCODE ID=_PRINT_END_DELAYED DURATION=0 ; reset timeout
 
     CASELIGHT_HEATING
     STATUS_HEATING
