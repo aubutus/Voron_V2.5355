@@ -30,6 +30,10 @@ trusted_clients =
 subscriptions = 
 	mainsail
 
+[spoolman]
+server = http://localhost:7912
+sync_rate = 5
+
 [update_manager]
 refresh_interval = 168
 enable_auto_refresh = True
@@ -108,4 +112,10 @@ is_system_service = False
 managed_services = klipper
 info_tags = 
 	desc=Cartographer Probe
+
+[update_manager spoolman]
+type = web
+channel = stable
+repo = Donkie/Spoolman
+path = ~/Spoolman
 
