@@ -28,11 +28,13 @@ trusted_clients =
 
 [announcements]
 subscriptions = 
-	mainsail
+	fluidd
 
 [spoolman]
 server = http://localhost:7912
 sync_rate = 5
+
+[timelapse]
 
 [update_manager]
 refresh_interval = 168
@@ -134,4 +136,11 @@ path = /home/pi/mainsail
 repo = mainsail-crew/mainsail
 channel = stable
 type = web
+
+[update_manager timelapse]
+type = git_repo
+primary_branch = main
+path = ~/moonraker-timelapse
+origin = https://github.com/mainsail-crew/moonraker-timelapse.git
+managed_services = klipper moonraker
 
