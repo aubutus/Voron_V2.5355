@@ -35,6 +35,7 @@ server = http://localhost:7912
 sync_rate = 5
 
 [timelapse]
+snapshoturl = http://voron.local/webcam/?action=snapshot
 
 [update_manager]
 refresh_interval = 168
