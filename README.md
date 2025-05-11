@@ -39,5 +39,6 @@ Voron 2.4r2 - 350mm - Stealthburner
     - Angrycam-boulanger-essentielb-hdcam-1080p-voron (https://www.printables.com/model/692280-angrycam-boulanger-essentielb-hdcam-1080p-voron)
     - Nevermore StealthMax : Version Raspberry Pico déporté (Non diffusé)
     - Passe Tube PTFE + Câble Can (Non diffusé)
+    - Stealthburner LGXLite V2 + SB2240 + HT BambuLab X1 + filamematrix + double senseur filament (https://github.com/aubutus/cad/tree/main/T%C3%AAte%20d'impression)
     
 
