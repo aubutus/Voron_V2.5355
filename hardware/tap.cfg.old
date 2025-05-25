@@ -78,3 +78,14 @@ probe_count: 6,6    #7,7
 #bicubic_tension: .2
 #JD 14/07/23 - OBSOLETE # relative_reference_index: 24     ; ((7 * 7)-1) / 2 = 24 (arrondi inferieur)
 
+[adxl345]
+# utilise l'adxl de la carte EBB SB2240
+cs_pin: EBBCan: PB12
+spi_software_sclk_pin: EBBCan: PB10
+spi_software_mosi_pin: EBBCan: PB11
+spi_software_miso_pin: EBBCan: PB2
+axes_map: z,-y,x
+
+[resonance_tester]
+probe_points: 175, 175, 20
+accel_chip: adxl345
