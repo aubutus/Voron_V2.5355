@@ -30,10 +30,6 @@ trusted_clients =
 subscriptions = 
 	fluidd
 
-[spoolman]
-server = http://localhost:7912
-sync_rate = 5
-
 [timelapse]
 snapshoturl = http://voron.local/webcam/?action=snapshot
 
