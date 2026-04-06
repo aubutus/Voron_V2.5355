@@ -14,6 +14,7 @@ Voron 2.4r2 - 350mm - Stealthburner
     - Cartographer Probe v3 with adxl345 - Standard Edition - CAN (Cartographer 3D)
     - Cartographer CNC Mount (Cartographer 3D)
     - Galileo Z XL (G2ZXL - Kit LDO)
+    - ArmoredTurtle\BoxTurtle (https://github.com/ArmoredTurtle/BoxTurtle) + Enclosure (Kit LDO)
 
 ## Mods
     - Voron v2.4 Sturdy Handles (https://github.com/VoronDesign/VoronUsers/tree/main/printer_mods/jeoje/Sturdy_Handles)
