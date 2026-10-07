@@ -1,5 +1,5 @@
 #####################################################################
-# Z Stepper Settings - CONFIGURATION ACTUELLE OPTIMISÉE (G2ZXL & 24V)
+#   Z Stepper Settings
 #####################################################################
 
 ## In Z-MOT Position
@@ -8,91 +8,101 @@
 step_pin: PD14
 dir_pin: !PD13
 enable_pin: !PD15
+## Z Drive G2ZXL 
 rotation_distance: 40
 gear_ratio: 9:1
 microsteps: 32
+
+##  In Z- Position
+# endstop_pin: ^PA0   # JD 14/05/2023 : passage au Voron TAP
 endstop_pin: probe:z_virtual_endstop
-position_min: -10   
-position_max: 300   
+
+position_min: -10   # initial -5
+position_max: 300   #340 initial - changer car porte câble touche le chassie
+
 homing_speed: 8
 second_homing_speed: 3
-homing_retract_dist: 0 # Requis pour Cartographer
+homing_retract_dist: 0      # cartographer needs this to be set to 0
+#position_endstop: 5        # cartographer needs this to be commented out
 
-## In E1-MOT Position
-## Z1 Stepper - Rear Left
+##	In E1-MOT Position
+##	Z1 Stepper - Rear Left
 [stepper_z1]
 step_pin: PE6
 dir_pin: PC13
 enable_pin: !PE5
+## Z Drive G2ZXL 
 rotation_distance: 40
 gear_ratio: 9:1
 microsteps: 32
 
-## In E2-MOT Position
-## Z2 Stepper - Rear Right
+##	In E2-MOT Position
+##	Z2 Stepper - Rear Right
 [stepper_z2]
 step_pin: PE2
 dir_pin: !PE4
 enable_pin: !PE3
+## Z Drive G2ZXL 
 rotation_distance: 40
 gear_ratio: 9:1
 microsteps: 32
 
-## In E3-MOT Position
-## Z3 Stepper - Front Right
+##	In E3-MOT Position
+##	Z3 Stepper - Front Right
 [stepper_z3]
 step_pin: PD12
 dir_pin: PC4
 enable_pin: !PE8
+## Z Drive G2ZXL 
 rotation_distance: 40
 gear_ratio: 9:1
 microsteps: 32
 
 
-#####################################################################
-# DRIVERS TMC2240 POUR LE Z (FYSETC 24V)
-#####################################################################
+######################################
+##          DRIVERS  TMC2209        ##
+######################################
 
 [tmc2240 stepper_z]
 cs_pin: PD10
-interpolate: False # Désactivé pour une précision optimale
-run_current: 1.000 # Augmenté à 1.0A pour assurer le couple du G2ZXL (Moteur 1.68A max)
+interpolate: True
+run_current: 0.8        # 0.8 max : Moteur LDO-42STH40-1684AC(RSS9T)
 spi_speed: 500000
 spi_software_sclk_pin: PE12
 spi_software_miso_pin: PE13
 spi_software_mosi_pin: PE14
 stealthchop_threshold: 0
-rref: 12000 # Valeur générique aux TMC2240 
+rref: 12000 # doc moteur dit 1.65 ohms
 
 [tmc2240 stepper_z1]
 cs_pin: PC14
-interpolate: False
-run_current: 1.000             
+interpolate: True
+run_current: 0.8        # 0.8 max : Moteur LDO-42STH40-1684AC(RSS9T)
 spi_speed: 500000
 spi_software_sclk_pin: PE12
 spi_software_miso_pin: PE13
 spi_software_mosi_pin: PE14
 stealthchop_threshold: 0
-rref: 12000 # Valeur générique aux TMC2240 
+rref: 12000 # doc moteur dit 1.65 ohms
 
 [tmc2240 stepper_z2]
 cs_pin: PC15
-interpolate: False
-run_current: 1.000             
+interpolate: true
+run_current: 0.8       # 0.8 max : Moteur LDO-42STH40-1684AC(RSS9T)
 spi_speed: 500000
 spi_software_sclk_pin: PE12
 spi_software_miso_pin: PE13
 spi_software_mosi_pin: PE14
 stealthchop_threshold: 0
-rref: 12000 # Valeur générique aux TMC2240 
+rref: 12000 # doc moteur dit 1.65 ohms
 
 [tmc2240 stepper_z3]
 cs_pin: PA15
-interpolate: False
-run_current: 1.000             
+interpolate: true
+run_current: 0.8        # 0.8 max : Moteur LDO-42STH40-1684AC(RSS9T)
 spi_speed: 500000
 spi_software_sclk_pin: PE12
 spi_software_miso_pin: PE13
 spi_software_mosi_pin: PE14
 stealthchop_threshold: 0
-rref: 12000 # Valeur générique aux TMC2240 
+rref: 12000 # doc moteur dit 1.65 ohms
