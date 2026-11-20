@@ -8,6 +8,7 @@ Voron 2.4r2 - 350mm - Stealthburner
     - Spider 3.0H7 (Fysetc) + 6 TMC2240 (S2240 V2 Fysetc)
     - GE5C
     - PI TFT50 (Big Tree Tech)
+    - LGX Lite V2
     - EBB SB2240 (Big Tree Tech)
     - RAINBOW BARF LOGO LED (fysetc)
     - Hotend X1 (BambouLab)
